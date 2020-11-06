@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 {
     // Start is called before the first frame update
     void Start()
@@ -32,7 +31,6 @@ using UnityEngine;
 
       List<Item> randomItems = GetRandomItemsFromList<Item> (allItems, 5);
  }
-
 
 //Spawn 5 randomly selected dancers from the DancersOnStage list
 public class Team1Container : MonoBehaviour
@@ -121,9 +119,7 @@ public class Team1Container : MonoBehaviour
  }
  }
 
-
 //List the 15 characters to choose from
-
 {
     public void
 
@@ -147,8 +143,6 @@ public class SpawnDancer : MonoBehaviour
 }
 
 //Limit of 5 characters selected
-
-
 {
     // Start is called before the first frame update
     void Start()

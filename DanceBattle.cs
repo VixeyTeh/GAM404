@@ -13,9 +13,12 @@ using UnityEngine;
  
      // Use this for initialization
      void Start () {
+         Player1.ActionComplete = true;
+     }
+
+     void Start () {
          Player2.ActionComplete = true;
      }
-     
      // Update is called once per frame
      void Update () {
  

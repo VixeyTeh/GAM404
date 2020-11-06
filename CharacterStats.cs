@@ -45,9 +45,7 @@ public class WhileLoop : MonoBehaviour
             Name = RandomName;
     }
 }            
-            
             //Character Health
-            
             public class CharacterStats : MonoBehaviour 
 {
             public int maxHealth = 100;
