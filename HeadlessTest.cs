@@ -32,3 +32,5 @@ public static void AssignRandom()
                 }
             }
         }
+
+        = Random.rnge(min, max)

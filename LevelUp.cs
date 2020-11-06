@@ -23,7 +23,7 @@ public class Experience : MonoBehaviour
     //exp amount left to next levelup
     public int vExpLeft = 3;
     //modifier that increases needed exp each level
-    public float vExpMod = 1f;
+    public float vExpMod = 1.5f;
  
     public void GainExp(int e)
     {
@@ -45,7 +45,28 @@ public class Experience : MonoBehaviour
  public class CharacterStatsIncrease : MonoBehaviour
  {
 
-  //
+  //Apply level up
+  var currentXP = 0;
+var nextLevelUp = 100;
 
+
+gainExperience(int amount)
+{
+    currentXP += amount;
+    if (currentXP >= nextLevelUp)
+    {
+        levelUp();
+    }
+}
+
+
+levelUp()
+{
+    var nextLevelUp += 10;
+    var maxHealth += 10;
+    var maxDexterity += 5;
+    var maxStamina += 5;
+    var maxStrength += 5;
+    var maxAcuity += 5;
 
  }
