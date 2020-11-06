@@ -18,7 +18,7 @@ public static void AssignRandom()
             Dancer.Add(new Dancer() { Name = "Blue Dancer 4" });
             Dancer.Add(new Dancer() { Name = "Blue Dancer 5" });
 
-            List<int> numbers = new List<int>() { 0, 1, 2, 3, 4, 5 };
+            List<int> numbers = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, };
             int counter = 0;
             while (numbers.Count>0)
             {

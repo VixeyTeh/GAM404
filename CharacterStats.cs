@@ -44,7 +44,25 @@ public class WhileLoop : MonoBehaviour
     {
             Name = RandomName;
     }
-}            
+}          //Random modifiers for Character Stats           
+ {
+
+          int numberOfPointsToDistribute = 20;
+          int numberOfAttributes = 4;
+          int pointsLeft = numberOfPointsToDistribute;
+          for(int i = 0; i < numberOfAttributes; i++)
+
+
+         int randomPoints = Random.Range(0, pointsLeft);
+         attributes[i] = randomPoints;
+         pointsLeft -= randomPoints;
+
+         Dexterity = Mathf.Clamp(0, 10, average + Random.Range(-average, average))
+         Stamina = Mathf.Clamp(0, 10, average + Random.Range(-average, average))
+         Stregnth = Mathf.Clamp(0, 10, average + Random.Range(-average, average))
+         Acuity = Mathf.Clamp(0, 10, average + Random.Range(-average, average))
+
+ }
             //Character Health
             public class CharacterStats : MonoBehaviour 
 {

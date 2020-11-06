@@ -2,7 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
- 
+//Apply Winner attribute to team members still awake
+
+public class Winner : MonoBehaviour
+{    
+    Update WinnerExperience
+    Update WinnerCharaterStatsIncrease
+    Update WinnerLevelUp
+}
+
 public class Experience : MonoBehaviour 
 {
  
@@ -33,3 +41,11 @@ public class Experience : MonoBehaviour
         vExpLeft = (int)Mathf.Floor(vExpBase * t);
     }
 }
+
+ public class CharacterStatsIncrease : MonoBehaviour
+ {
+
+  //
+
+
+ }

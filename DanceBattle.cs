@@ -50,11 +50,13 @@ using UnityEngine;
     currentHealth -= damage;
     Debug.Log(transform.name + "takes" + damage + "damage.");
 
+    //Character is dazed if HP drops to 0 or less
     if (currentHealth <= 0)
     {
         Dazed ();
 
          void Update() 
+         
          //Player health bar
          {
  if (playerHealth.fillAmount == 0) { 
