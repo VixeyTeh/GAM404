@@ -2,17 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelUp : MonoBehaviour
+ 
+public class Experience : MonoBehaviour 
 {
-    // Start is called before the first frame update
-    void Start()
+ 
+    //current level
+    public int vLevel = 1;
+    //current exp amount
+    public int vCurrExp = 0;
+    //exp amount needed for lvl 1
+    public int vExpBase = 3;
+    //exp amount left to next levelup
+    public int vExpLeft = 3;
+    //modifier that increases needed exp each level
+    public float vExpMod = 1f;
+ 
+    public void GainExp(int e)
     {
-        
+        vCurrExp += e;
+        if(vCurrExp >= vExpLeft)
+        {
+            LvlUp();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    void LvlUp()
     {
-        
+        vCurrExp -= vExpLeft;
+        vLevel++;
+        float t = Mathf.Pow(vExpMod, vLevel);
+        vExpLeft = (int)Mathf.Floor(vExpBase * t);
     }
 }
